@@ -37,5 +37,5 @@ $ npm run build
 ![](https://i.imgur.com/VugQR7Z.png)
 > 找到價位合理又舒適、保值的房子
 
-![](https://i.imgur.com/dFJTmnh.png)
+![](https://i.imgur.com/VUTZqsU.png)
 > 透過線上留言，客服人員將儘速為你服務

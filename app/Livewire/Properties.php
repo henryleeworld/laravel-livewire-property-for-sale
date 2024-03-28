@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
-use Livewire\Component;
 use App\Models\Property;
 use Illuminate\View\View;
+use Livewire\Component;
 use Livewire\WithPagination;
 
 class Properties extends Component

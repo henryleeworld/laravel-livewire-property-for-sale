@@ -33,8 +33,8 @@
                     <div class="site-navigation">
                         <a href="/" class="logo m-0 float-start">{{ config('app.name') }}</a>
                         <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
-                            <li class="active"><a href="/">{{ __('Home') }}</a></li>
-                            <li><a href="{{ route('properties') }}">{{ __('Properties') }}</a></li>
+                            <li class="{{ request()->routeIs('properties*') || request()->routeIs('services') || request()->routeIs('about') || request()->routeIs('contact') ? '' : 'active' }}"><a href="/">{{ __('Home') }}</a></li>
+                            <li class="{{ request()->routeIs('properties*') ? 'active' : '' }}"><a href="{{ route('properties') }}">{{ __('Properties') }}</a></li>
                             <!--
                             <li class="has-children">
                                 <a href="{{ route('properties') }}">{{ __('Properties') }}</a>
@@ -52,9 +52,9 @@
                                 </ul>
                             </li>
                             -->
-                            <li><a href="{{ route('services') }}">{{ __('Services') }}</a></li>
-                            <li><a href="{{ route('about') }}">{{ __('About') }}</a></li>
-                            <li><a href="{{ route('contact') }}">{{ __('Contact Us') }}</a></li>
+                            <li class="{{ request()->routeIs('services') ? 'active' : '' }}"><a href="{{ route('services') }}">{{ __('Services') }}</a></li>
+                            <li class="{{ request()->routeIs('about') ? 'active' : '' }}"><a href="{{ route('about') }}">{{ __('About') }}</a></li>
+                            <li class="{{ request()->routeIs('contact') ? 'active' : '' }}"><a href="{{ route('contact') }}">{{ __('Contact Us') }}</a></li>
                         </ul>
                         <a href="#" class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
                             <span></span>

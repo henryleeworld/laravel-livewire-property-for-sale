@@ -8,11 +8,11 @@
             <div class="specs d-flex mb-4">
                 <span class="d-block d-flex align-items-center me-3">
                     <span class="icon-bed me-2"></span>
-                    <span class="caption">{{ $property->beds }} beds</span>
+                    <span class="caption">{{ $property->beds . __('beds') }}</span>
                 </span>
                 <span class="d-block d-flex align-items-center">
                     <span class="icon-bath me-2"></span>
-                    <span class="caption">{{ $property->baths }} baths</span>
+                    <span class="caption">{{ $property->baths . __('baths') }}</span>
                 </span>
             </div>
             <a href="{{ route('properties.show', $property) }}" class="btn btn-primary py-2 px-3">{{ __('See details') }}</a>

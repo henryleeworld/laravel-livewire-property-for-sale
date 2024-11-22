@@ -9,11 +9,12 @@ use Illuminate\Database\Seeder;
 class PropertySeeder extends Seeder
 {
     /**
-     * Run the database seeds.
+     * Run the database seeders.
      */
     public function run(): void
     {
-        Property::factory(100)
+        Property::factory()
+            ->count(100)
             ->hasImages(3)
             ->create();
     }

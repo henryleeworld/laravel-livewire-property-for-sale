@@ -9,10 +9,10 @@ use Illuminate\Database\Seeder;
 class AgentSeeder extends Seeder
 {
     /**
-     * Run the database seeds.
+     * Run the database seeders.
      */
     public function run(): void
     {
-        Agent::factory(6)->create();
+        Agent::factory()->count(6)->create();
     }
 }

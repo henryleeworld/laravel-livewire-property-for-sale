@@ -9,10 +9,10 @@ use Illuminate\Database\Seeder;
 class TestimonialSeeder extends Seeder
 {
     /**
-     * Run the database seeds.
+     * Run the database seeders.
      */
     public function run(): void
     {
-        Testimonial::factory(20)->create();
+        Testimonial::factory()->count(20)->create();
     }
 }

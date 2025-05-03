@@ -9,12 +9,13 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Property extends Model
 {
+    /** @use HasFactory<\Database\Factories\PropertyFactory> */
     use HasFactory;
 
     /**
      * The attributes that are mass assignable.
      *
-     * @var array<int, string>
+     * @var list<string>
      */
     protected $fillable = ['agent_id', 'price', 'address', 'country', 'beds', 'baths', 'description', 'is_popular', 'is_featured'];
 

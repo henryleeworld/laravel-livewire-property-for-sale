@@ -1,4 +1,4 @@
-# Laravel 11 Livewire 銷售房屋
+# Laravel 12 Livewire 銷售房屋
 
 初入購屋市場時，通常都會被這個行業中的各種專有名詞嚇到，上購屋網站會看到各家房仲業者的名號、到預售屋現場又會遇到代銷，有時甚至還會遇到屋主，實在不清楚他們到底能夠提供什麼樣的服務。但重點是，不論你現在想買還是賣房子，了解這些窗口的功能與專業都是必要的，一方面是在溝通時不會產生落差，再來也是保障自我權益，不會因為不懂而被不肖業者欺騙。
 
@@ -20,22 +20,14 @@ $ php artisan key:generate
 ```sh
 $ php artisan migrate --seed
 ```
-- 執行安裝 Vite 和 Laravel 擴充套件引用的依賴項目。
-```sh
-$ npm install
-```
-- 執行正式環境版本化資源管道並編譯。
-```sh
-$ npm run build
-```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/` 來快速找到心目中理想的家。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/VugQR7Z.png)
+![](https://i.imgur.com/BBWkKnp.png)
 > 找到價位合理又舒適、保值的房子
 
-![](https://i.imgur.com/VUTZqsU.png)
+![](https://i.imgur.com/u7RMRhf.png)
 > 透過線上留言，客服人員將儘速為你服務

@@ -7,12 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Agent extends Model
 {
+    /** @use HasFactory<\Database\Factories\AgentFactory> */
     use HasFactory;
 
     /**
      * The attributes that are mass assignable.
      *
-     * @var array<int, string>
+     * @var list<string>
      */
     protected $fillable = ['full_name', 'description', 'title', 'photo', 'twitter', 'facebook', 'linkedin', 'instagram'];
 }

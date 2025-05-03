@@ -16,7 +16,7 @@ class ImageFactory extends Factory
     {
         return [
             'property_id' => Property::factory(),
-            'image'       => 'storage/properties/img_' . random_int(1, 8) . '.jpg',
+            'image'       => 'images/img_' . random_int(1, 8) . '.jpg',
         ];
     }
 }

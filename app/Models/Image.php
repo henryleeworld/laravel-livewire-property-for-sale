@@ -7,12 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Image extends Model
 {
+    /** @use HasFactory<\Database\Factories\ImageFactory> */
     use HasFactory;
 
     /**
      * The attributes that are mass assignable.
      *
-     * @var array<int, string>
+     * @var list<string>
      */
     protected $fillable = ['property_id', 'image'];
 }

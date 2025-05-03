@@ -15,7 +15,7 @@ class TestimonialFactory extends Factory
     {
         return [
             'full_name'   => fake()->firstName() . ' ' . fake()->lastName(),
-            'photo'       => 'storage/testimonials/person_' . random_int(1, 6) . '-min.jpg',
+            'photo'       => 'images/person_' . random_int(1, 6) . '-min.jpg',
             'company'     => fake()->jobTitle() . ', ' . fake()->company(),
             'rating'      => random_int(1, 5),
             'testimonial' => fake()->words(30, asText: true),

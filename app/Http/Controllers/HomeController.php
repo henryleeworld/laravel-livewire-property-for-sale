@@ -9,6 +9,9 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    /**
+     * Invoke the controller method.
+     */
     public function __invoke(Request $request)
     {
         $agents = Agent::inRandomOrder()->take(3)->get();
